@@ -7,18 +7,24 @@ require 'json'
 # - Network calls
 # - Filesystem navigation
 class MyClass
-  # def initialize
-  #   fetch_oaks
-  # end
 
   def to_s
-    "*<br>"
+    <<-'ENDSTRING'
+<pre style="font-family:monospace">
+    _.-````'-,_
+    _,.,_ ,-'`           `'-.,_
+  /)     (\                   '``-.
+ ((      ) )                      `\
+  \)    (_/                        )\
+   |       /)           '    ,'    / \
+   `\    ^'            '     (    /  ))
+     |      _/\ ,     /    ,,`\   (  &quot;`
+      \Y,   |  \  \  | ````| / \_ \
+        `)_/    \  \  )    ( &gt;  ( &gt;
+                 \( \(     |/   |/
+                /_(/_(    /_(  /_(
+</div>
+    ENDSTRING
   end
 
-  private
-
-  # def fetch_oaks
-  #   file = File.open "activity.json"
-  #   @data = JSON.load file
-  # end
 end
