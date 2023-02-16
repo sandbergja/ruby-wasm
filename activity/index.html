@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/ruby-3_2-wasm-wasi@latest/dist/browser.script.iife.js"></script>
+    <script type="text/ruby" src="my_class.rb"></script>
+    <script type="text/ruby">
+      require 'js'
+      JS.global[:document].getElementById('results')[:innerText] = MyClass.new.to_s
+    </script>
+  </head>
+  <body>
+    <h1>My wonderful class</h1>
+    <div id="results"></div>
+  </body>
+</html>
